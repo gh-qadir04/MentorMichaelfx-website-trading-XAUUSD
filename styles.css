@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==================== PRELOADER ==================== */
-/* .preloader {
+.preloader {
     position: fixed;
     inset: 0;
     background: var(--bg-primary);
@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     color: var(--accent-primary);
     margin-top: 20px;
-} */
+}
 
 /* ==================== SCROLL TO TOP ==================== */
 .scroll-top {
@@ -793,42 +793,143 @@ h1, h2, h3, h4, h5, h6 {
 
 .stat-label { font-size: 14px; color: var(--text-muted); }
 
-/* ==================== REVIEWS SECTION ==================== */ .reviews { padding: var(--section-padding) 0; background: var(--bg-secondary); overflow: hidden; }
+/* ==================== REVIEWS SECTION ==================== */ /* ==================== REVIEWS SECTION ==================== */ 
+/* ==================== ADVANCED REVIEWS SECTION ==================== */ 
+.reviews { 
+    padding: var(--section-padding) 0; 
+    background: var(--bg-primary); 
+    overflow: hidden; 
+    position: relative;
+}
 
-.reviews-slider-container { position: relative; overflow: hidden; padding: 20px 0; }
+/* Faded Edges for the Slider */
+.reviews-slider-container { 
+    position: relative; 
+    overflow: hidden; 
+    padding: 40px 0; 
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
 
-.reviews-track { display: flex; gap: 24px; animation: slide 5s linear infinite; }
+.reviews-track { 
+    display: flex; 
+    gap: 24px; 
+    animation: slide 10s linear infinite; 
+}
 
 .reviews-track:hover { animation-play-state: paused; }
 
 @keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-.review-card { min-width: 380px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 28px; flex-shrink: 0; transition: all var(--transition-base); }
+/* Advanced Premium Card Styling */
+.review-card { 
+    min-width: 320px; 
+    max-width: 320px;
+    background: linear-gradient(145deg, var(--bg-card) 0%, rgba(22, 33, 62, 0.5) 100%); 
+    border: 1px solid rgba(139, 92, 246, 0.15); /* Faint purple border */
+    border-radius: var(--radius-xl); 
+    padding: 30px; 
+    flex-shrink: 0; 
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy hover effect */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
 
-.review-card:hover { border-color: var(--accent-primary); transform: translateY(-5px); }
+/* Giant Background Quote Icon */
+.review-card::before {
+    content: '\f10d'; /* FontAwesome quote-left */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: rgba(139, 92, 246, 0.05); /* Extremely faint purple */
+    z-index: -1;
+    transition: all 0.2s ease;
+}
 
-.review-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.review-card:hover { 
+    border-color: var(--accent-primary); 
+    transform: translateY(-10px); 
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15); 
+}
 
-.reviewer-avatar { width: 52px; height: 52px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: white; }
+.review-card:hover::before {
+    color: rgba(139, 92, 246, 0.12); /* Gets brighter on hover */
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.review-header { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
+
+/* Elegant Avatar Styling */
+.reviewer-avatar { 
+    width: 55px;  
+    height: 55px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 2px solid var(--accent-primary); 
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.3); /* Glow effect */
+    flex-shrink: 0;
+}
+
+.reviewer-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
 .reviewer-info { flex: 1; }
 
-.reviewer-name { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.reviewer-name { 
+    font-size: 16px; 
+    font-weight: 700; 
+    margin-bottom: 4px; 
+    display: flex;
+    align-items: center;
+}
 
-.reviewer-rating { display: flex; gap: 3px; }
+/* Verified Badge */
+.verified-badge {
+    color: #10b981; /* Green */
+    font-size: 13px;
+    margin-left: 6px;
+}
 
+.reviewer-rating { display: flex; gap: 4px; }
 .reviewer-rating i { font-size: 12px; color: var(--accent-amber); }
 
-.review-body { margin-bottom: 16px; }
+.review-body { margin-bottom: 20px; min-height: 80px; }
 
-.review-body p { font-size: 15px; color: var(--text-secondary); line-height: 1.6; font-style: italic; }
+.review-body p { 
+    font-size: 15px; 
+    color: var(--text-secondary); 
+    line-height: 1.6; 
+}
 
-.review-footer { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--border-subtle); }
+.review-footer { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding-top: 16px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.05); 
+}
 
-.review-profit { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600; color: var(--accent-green); }
+.review-profit { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 6px; 
+    font-size: 13px; 
+    font-weight: 700; 
+    color: var(--accent-green); 
+    background: rgba(16, 185, 129, 0.1);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
 
-.review-date { font-size: 12px; color: var(--text-muted); }
+.review-date { font-size: 12px; font-weight: 600; color: var(--text-muted); }
 
+@media (max-width: 768px) {
+    .review-card { min-width: 280px; max-width: 280px; padding: 24px; } 
+    .reviews-slider-container { -webkit-mask-image: none; mask-image: none; } /* Remove mask on mobile for better scrolling */
+}
 /* ==================== PRICING SECTION ==================== */ .pricing { padding: var(--section-padding) 0; background: var(--bg-primary); }
 
 .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start; }
@@ -2436,6 +2537,7 @@ img, svg, iframe, video {
 }
 
 /* Mobile Responsiveness for Process Section */
+/* Mobile Responsiveness for Process Section */
 @media (max-width: 900px) {
     .process-grid {
         flex-direction: column;
@@ -2450,5 +2552,19 @@ img, svg, iframe, video {
     
     .process-card {
         width: 100%;
+    }
+}
+
+/* Default TradingView Height */
+#tradingview_gold_pro {
+    height: 500px !important;
+    min-height: 400px;
+}
+
+/* Mobile TradingView Height Fix */
+@media (max-width: 768px) {
+    #tradingview_gold_pro {
+        height: 400px !important;
+        min-height: 350px;
     }
 }

@@ -27,7 +27,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/jpeg" href="logoserver.jpeg">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="styles.css" as="style">
+<link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,7 +112,7 @@
                     <a href="https://www.tradingview.com/u/Mentor_Michael03/"
                         target="_blank" class="social-btn tradingview"
                         title="TradingView">
-                        <i class="fas fa-chart-line"></i>
+                        <i ><img src="trd_view.jpeg" alt=""></i>
                     </a>
                 </div>
 
@@ -144,7 +145,7 @@
 
                     <h1 class="hero-title">
                         Start Earning with <span
-                            class="gradient-text">MentorMichael</span> Forex Signals
+                            class="gradient-text">Mentor Michael</span> Forex Signals
                     </h1>
 
                     <p class="hero-subtitle">
@@ -201,31 +202,10 @@
                         </div>
 
                        
-                        <div class="tradingview-widget-container" style="height: 250px; width: 100%;">
-  <div id="tradingview_gold" style="height: 100%; width: 100%;"></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "autosize": true,
-  "symbol": "OANDA:XAUUSD",
-  "interval": "60",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "3", // 3 is area chart
-  "locale": "en",
-  "enable_publishing": false,
-  "backgroundColor": "rgba(22, 33, 62, 0)", // Matches your website's dark theme
-  "gridColor": "rgba(255, 255, 255, 0.05)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "save_image": false,
-  "container_id": "tradingview_gold"
-}
-  );
-  </script>
+                       <div class="tradingview-widget-container" style="height: 500px; width: 100%;">
+    <div id="tradingview_gold_pro" style="height: 100%; width: 100%;"></div>
+    
 </div>
-
                         
 
                         <div class="chart-levels">
@@ -388,277 +368,133 @@
 
 
         <!-- Reviews Section -->
-        <section class="reviews" id="reviews">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Testimonials</span>
-                    <h2 class="section-title">What Our <span
-                            class="gradient-text">Traders Say</span></h2>
-                    <p class="section-desc">Join thousands of satisfied traders
-                        worldwide</p>
+       <div class="reviews-track">
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80" alt="John D." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">John D.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"Best signals I've ever used! Made $3,200 in my first month. The gold signals are spot on."</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$3,200 profit</div>
+            <div class="review-date">Jan 2024</div>
+        </div>
+    </div>
 
-                <div class="reviews-slider-container">
-                    <div class="reviews-track">
-                        <!-- Review 1 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">JD</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">John D.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Best signals I've ever used! Made $3,200 in my first month. The gold signals are spot on."</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$3,200
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah K." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">Sarah K.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"Incredible signals! The risk management advice alone is worth the subscription. Highly recommended!"</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$2,850 profit</div>
+            <div class="review-date">Jan 2024</div>
+        </div>
+    </div>
 
-                        <!-- Review 2 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">SK</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Sarah K.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> <i
-                                            class="fas fa-star"></i> </div>
-                                </div>
-                            </div> <div class="review-body">
-                                <p>"Incredible signals! The risk management advice alone is worth the subscription. Highly recommended!"</p>
-                            </div> <div class="review-footer"> <div
-                                    class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$2,850
-                                    profit</div> <div class="review-date">Jan
-                                    2024</div> </div> </div>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" alt="Michael R." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">Michael R.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"Been using for 6 months now. Consistent profits every month. Best investment I've made!"</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$4,100 profit</div>
+            <div class="review-date">Dec 2023</div>
+        </div>
+    </div>
 
-                        <!-- Review 3 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">MR</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Michael R.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Been using for 6 months now. Consistent profits every month. Best investment I've made!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$4,100
-                                    profit</div>
-                                <div class="review-date">Dec 2023</div>
-                            </div>
-                        </div>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=80" alt="Emma W." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">Emma W.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"Great educational content! Went from complete newbie to placing my own trades confidently."</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$1,500 profit</div>
+            <div class="review-date">Jan 2024</div>
+        </div>
+    </div>
 
-                        <!-- Review 4 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">EW</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Emma W.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Great educational content! Went from complete newbie to placing my own trades confidently."</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$1,500
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100&q=80" alt="David L." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">David L.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"The Telegram group is amazing! Real-time support and weekly market analysis."</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$2,200 profit</div>
+            <div class="review-date">Jan 2024</div>
+        </div>
+    </div>
 
-                        <!-- Review 5 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">DL</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">David L.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"The Telegram group is amazing! Real-time support and weekly market analysis."</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$2,200
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
-
-                        <!-- Review 6 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">AJ</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Alex J.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Finally found a signal service that delivers! My portfolio is up 180% this year!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$5,400
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
-
-                        <!-- Review 7 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">LM</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Lisa M.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Professional and reliable. The gold signals changed my trading game completely!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$2,900
-                                    profit</div>
-                                <div class="review-date">Dec 2023</div>
-                            </div>
-                        </div>
-
-                        <!-- Review 8 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">RT</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Robert T.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"I've tried many signal groups but Mentor Michael is by far the best. Consistent results!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$3,600
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
-
-                        <!-- Review 9 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">NK</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Nancy K.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"Excellent customer support and accurate signals. Highly recommend for beginners!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$1,800
-                                    profit</div>
-                                <div class="review-date">Jan 2024</div>
-                            </div>
-                        </div>
-
-                        <!-- Review 10 -->
-                        <div class="review-card">
-                            <div class="review-header">
-                                <div class="reviewer-avatar">BP</div>
-                                <div class="reviewer-info">
-                                    <div class="reviewer-name">Brian P.</div>
-                                    <div class="reviewer-rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="review-body">
-                                <p>"The mentorship program is exceptional. Learned more here than anywhere else!"</p>
-                            </div>
-                            <div class="review-footer">
-                                <div class="review-profit"><i
-                                        class="fas fa-arrow-up"></i> +$2,450
-                                    profit</div>
-                                <div class="review-date">Dec 2023</div>
-                            </div>
-                        </div>
-                    </div>
-                </div> </section>
+    <div class="review-card">
+        <div class="review-header">
+            <div class="reviewer-avatar">
+                <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?auto=format&fit=crop&w=100&h=100&q=80" alt="Alex J." loading ="lazy">
+            </div>
+            <div class="reviewer-info">
+                <div class="reviewer-name">Alex J.<i class="fas fa-check-circle verified-badge"></i></div>
+                <div class="reviewer-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+        <div class="review-body">
+            <p>"Finally found a signal service that delivers! My portfolio is up 180% this year!"</p>
+        </div>
+        <div class="review-footer">
+            <div class="review-profit"><i class="fas fa-arrow-up"></i> +$5,400 profit</div>
+            <div class="review-date">Jan 2024</div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -978,6 +814,7 @@
               <div class="tradingview-widget-container__widget"></div>
               </div>
         </div>
+        
     </div>
 </section>
 
@@ -992,7 +829,7 @@
         <div class="blog-grid" style="gap: 20px;">
             <article class="blog-card fade-in">
                 <div class="blog-image" style="height: 180px;">
-                    <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80" alt="XAU/USD Gold technical analysis and weekly forecast">
+                    <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=800&q=80" alt="XAU/USD Gold technical analysis and weekly forecast" >
                     <span class="blog-category">News</span>
                 </div>
                 <div class="blog-content" style="padding: 20px;">
@@ -1004,7 +841,7 @@
 
             <article class="blog-card fade-in">
                 <div class="blog-image" style="height: 180px;">
-                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80" alt="Gold Price Forecast Chart XAUUSD">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80" alt="Gold Price Forecast Chart XAUUSD" >
                     <span class="blog-category">Forecast</span>
                 </div>
                 <div class="blog-content" style="padding: 20px;">
@@ -1016,7 +853,7 @@
 
             <article class="blog-card fade-in">
                 <div class="blog-image" style="height: 180px;">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Forex Trading Psychology and Discipline Guide">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Forex Trading Psychology and Discipline Guide" >
                     <span class="blog-category">Mindset</span>
                 </div>
                 <div class="blog-content" style="padding: 20px;">
